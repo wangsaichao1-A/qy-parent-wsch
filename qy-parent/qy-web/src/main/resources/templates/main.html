@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{/common/head::head}"></head>
+<body class="nav-md footer_fixed">
+<div id="div_userId" class="form-group" style="display: none;">${userSession.id }</div>
+<div th:replace="~{/common/left::#left}"></div>
+<div class="page-title">
+	<div class="title_left">
+		<h3>
+			欢迎你：[[${session.userSession.userName}]]<strong> | 用户类型：[[${session.userSession.userTypeName}]]</strong>
+		</h3>
+		<img src="/images/main.jpg" style="height: 600px;width: 1000px">
+	</div>
+</div>
+<div class="clearfix"></div>
+<div th:replace="~{/common/footer::footer}">
+</div>
+<!-- /footer content -->
+</div>
+</div>
+</div>
+</body>
+</html>
